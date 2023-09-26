@@ -1,15 +1,15 @@
-header {
+header{
     background-color: aqua;
     height: 120px;
 }
 
-* {
+*{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-#logo {
+#logo{
     height: 80px;
     position: absolute;
     left: 750px;
@@ -32,7 +32,11 @@ h1{
     top: 40px;
 }
 
-footer {
+#titulo{
+
+}
+
+footer{
     background-color:beige;
 }
 
