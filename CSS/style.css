@@ -33,7 +33,8 @@ h1{
 }
 
 #titulo{
-
+    position: relative;
+    left: 50%;
 }
 
 footer{
