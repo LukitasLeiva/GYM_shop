@@ -12,12 +12,13 @@ header{
 #logo{
     height: 80px;
     position: absolute;
-    left: 750px;
+    left: 47%;
     top: 18px;
 }
 
 main{
-    height: 525px;
+    height: 700px;
+    background-color: antiquewhite;
 }
 
 nav{
@@ -32,12 +33,41 @@ h1{
     top: 40px;
 }
 
-#titulo{
+.centrar{
+    text-align: center;
+}
+
+#menu{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#menutxt{
+    width: 500px;
+    text-align: justify;
     position: relative;
-    left: 50%;
+    top: 90px;
+    left: 30px;
+}
+
+#txt{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer{
-    background-color:beige;
+    background-color:aquamarine;
+    position: absolute;
+    top: 100%;
+    width: 100%;
 }
 
+#boton-regreso{
+    position: relative;
+    justify-content: center;
+}
+
+#derechos{
+    position: relative;
+    text-align: end;
+}
