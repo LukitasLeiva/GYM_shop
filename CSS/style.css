@@ -1,6 +1,12 @@
 header{
     background-color: aqua;
-    height: 120px;
+}
+
+#header{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 *{
@@ -11,35 +17,24 @@ header{
 
 #logo{
     height: 80px;
-    position: absolute;
-    left: 47%;
-    top: 18px;
 }
 
-main{
-    height: 700px;
+body{
     background-color: antiquewhite;
-}
-
-nav{
-    position: absolute;
-    right: 5px;
-    top: 25px;
 }
 
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
-    top: 40px;
 }
 
 .centrar{
+    width: 100%;
     text-align: center;
 }
 
 #menu{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: wrap;
 }
 
 #menutxt{
@@ -62,12 +57,17 @@ footer{
     width: 100%;
 }
 
-#boton-regreso{
-    position: relative;
-    justify-content: center;
+#piedepagina{
+    height: 150px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
 }
 
-#derechos{
-    position: relative;
-    text-align: end;
-}
+
+/* #derechos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: end;
+}  */
