@@ -15,7 +15,6 @@ body {
 }
 body header {
   background-color: #45ADA8;
-  width: 100%;
 }
 body header #header {
   display: flex;
@@ -45,9 +44,6 @@ body main #menuimg {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  position: relative;
-  bottom: 140px;
-  left: 55%;
 }
 body main #menuimg #img1-menu {
   height: 200px;
@@ -60,9 +56,20 @@ body main #menuimg #img2-menu {
 @media screen and (max-width: 950px) {
   body main #menuimg #img1-menu {
     visibility: hidden;
+    height: 100px;
+    width: 150px;
   }
   body main #menuimg #img2-menu {
     visibility: hidden;
+    height: 100px;
+    width: 100px;
+  }
+}
+@media screen and (min-width: 950px) {
+  body main #menuimg {
+    position: relative;
+    bottom: 125px;
+    left: 50%;
   }
 }
 body main .centrar {
@@ -105,6 +112,25 @@ body main #lista-nosotros {
   align-content: center;
   text-align: center;
 }
+@media screen and (max-width: 400px) {
+  body main #formulario {
+    justify-content: baseline;
+    align-items: baseline;
+    width: 120px;
+  }
+}
+@media screen and (max-width: 700px) {
+  body main #lista-nosotros {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media screen and (max-width: 400px) {
+  body main .centrar {
+    padding-right: 0px;
+    text-align: left;
+  }
+}
 @media screen and (max-width: 1400px) {
   body main .txt-nosotros-size {
     font-size: 10px;
@@ -130,7 +156,7 @@ body main #lista-nosotros {
 
 footer {
   background-color: #45ADA8;
-  position: absolute;
+  position: relative;
   top: 100%;
   width: 100%;
   height: 250px;
@@ -150,12 +176,15 @@ footer #boton-regreso {
   bottom: 5%;
 }
 footer #mapa {
+  display: flex;
+  flex-wrap: wrap;
   width: 400px;
   height: 200px;
 }
 @media (max-width: 540px) {
   footer #mapa {
-    visibility: hidden;
+    width: 120px;
+    height: 75px;
   }
 }
 
