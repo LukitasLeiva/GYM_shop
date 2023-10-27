@@ -151,10 +151,13 @@ body{
         #img1-redes{
             height: 50px;
             width: 50px;
+            display: flex;
+            align-self: center;
         }
         #img2-redes{
             height: 50px;
             width: 50px;
+            align-self: center;
         }
         #img3-redes{
             height: 50px;
@@ -165,6 +168,32 @@ body{
             top: 10px;
             display: flex;
             justify-content: space-around;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            :hover{
+                color: #45ADA8;
+            }
+        }
+        .articulo1{
+            display: flex;
+            flex-direction: column;
+        }
+        .articulo2{
+            display: flex;
+            flex-direction: column;
+        }
+        .articulo3{
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (max-width: 250px){
+            .redes{
+                display: grid;
+                grid-template-columns: auto;
+            }
         }
         .cajaformulario{
             @media screen and (max-width: 650px){

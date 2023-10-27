@@ -156,10 +156,13 @@ body main .centrar-espaciado li {
 body main #img1-redes {
   height: 50px;
   width: 50px;
+  display: flex;
+  align-self: center;
 }
 body main #img2-redes {
   height: 50px;
   width: 50px;
+  align-self: center;
 }
 body main #img3-redes {
   height: 50px;
@@ -170,6 +173,32 @@ body main .redes {
   top: 10px;
   display: flex;
   justify-content: space-around;
+  text-align: center;
+}
+body main .redes a {
+  text-decoration: none;
+  color: black;
+}
+body main .redes :hover {
+  color: #45ADA8;
+}
+body main .articulo1 {
+  display: flex;
+  flex-direction: column;
+}
+body main .articulo2 {
+  display: flex;
+  flex-direction: column;
+}
+body main .articulo3 {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 250px) {
+  body main .redes {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }
 @media screen and (max-width: 650px) {
   body main .cajaformulario #formulario {
